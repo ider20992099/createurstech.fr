@@ -19,7 +19,8 @@ var $grid = $('.grid').isotope({
       return searchResult && buttonResult;
     }
   });
-  
+  $grid.isotope('shuffle')
+
   var filters = {};
   
   $('.filters').on( 'click', '.button', function( event ) {
